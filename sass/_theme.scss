@@ -1,0 +1,171 @@
+.theme--1 {
+    background-color: $color-theme-1-bg-main;
+    color: $color-theme-1-text;
+
+    .calculator {
+        &__div--toggle {
+            background-color: $color-theme-1-bg-keypad;
+
+            .slide__btn {
+                background-color: $color-theme-1-key-orange;
+            }
+        }
+
+
+        &-output {
+            background-color: $color-theme-1-bg-output;
+        }
+
+        &-grid {
+            background-color: $color-theme-1-bg-keypad;
+
+            .btn {
+                color: $color-theme-1-text;
+
+                &:hover {
+                    background-color: $color-theme-1-key-shadow;
+                }
+            }
+
+            .btn--number,
+            .btn--operation {
+                background-color: $color-theme-1-key;
+                box-shadow: 0 4px 0 $color-theme-1-key-shadow;
+                color: $color-theme-1-text-blue-dark;
+            }
+
+            .btn--delete,
+            .btn--reset {
+                background-color: $color-theme-1-key-blue-dark;
+                box-shadow: 0 4px 0 $color-theme-1-key-blue-dark-shadow;
+
+                &:hover {
+                    background-color: $color-theme-1-key-blue-dark-shadow;
+                }
+            }
+
+            .btn--equal {
+                background-color: $color-theme-1-key-orange;
+                box-shadow: 0 4px 0 $color-theme-1-key-orange-shadow;
+
+                &:hover {
+                    background-color: $color-theme-1-key-orange-shadow;
+                }
+            }
+        }
+    }
+}
+
+
+.theme--2 {
+    background-color: $color-theme-2-bg-main;
+    color: $color-theme-2-text-gray-yellow;
+
+    .calculator {
+        &__div--toggle {
+            background-color: $color-theme-2-bg-keypad;
+
+            .slide__btn {
+                background-color: $color-theme-2-key-orange;
+            }
+        }
+
+        &-output {
+            background-color: $color-theme-2-bg-output;
+        }
+
+        &-grid {
+            background-color: $color-theme-2-bg-keypad;
+
+            .btn {
+                color: $color-theme-2-text;
+
+                &:hover {
+                    background-color: $color-theme-2-key-shadow;
+                }
+            }
+
+            .btn--number,
+            .btn--operation {
+                background-color: $color-theme-2-key;
+                box-shadow: 0 4px 0 $color-theme-2-key-shadow;
+                color: $color-theme-2-text-gray-yellow;
+            }
+
+            .btn--delete,
+            .btn--reset {
+                background-color: $color-theme-2-key-cyan;
+                box-shadow: 0 4px 0 $color-theme-2-key-cyan-dark;
+
+                &:hover {
+                    background-color: $color-theme-2-key-cyan-dark;
+                }
+            }
+
+            .btn--equal {
+                background-color: $color-theme-2-key-orange;
+                box-shadow: 0 4px 0 $color-theme-2-key-orange-dark;
+
+                &:hover {
+                    background-color: $color-theme-2-key-orange-dark;
+                }
+            }
+        }
+    }
+}
+
+.theme--3 {
+    background-color: $color-theme-3-bg-main;
+    color: $color-theme-3-text-yellow-light;
+
+    .calculator {
+        &__div--toggle {
+            background-color: $color-theme-3-bg-keypad;
+
+            .slide__btn {
+                background-color: $color-theme-3-key-cyan;
+            }
+        }
+
+        &-output {
+            background-color: $color-theme-3-bg-keypad;
+        }
+
+        &-grid {
+            background-color: $color-theme-3-bg-keypad;
+
+            .btn {
+                color: $color-theme-3-text-yellow-light;
+
+                &:hover {
+                    background-color: $color-theme-3-key-shadow;
+                }
+            }
+
+            .btn--number,
+            .btn--operation {
+                background-color: $color-theme-3-key;
+                box-shadow: 0 4px 0 $color-theme-3-key-shadow;
+            }
+
+            .btn--delete,
+            .btn--reset {
+                background-color: $color-theme-3-key-violet-dark;
+                box-shadow: 0 4px 0 $color-theme-3-key-vivid-magenta;
+
+                &:hover {
+                    background-color: $color-theme-3-key-vivid-magenta;
+                }
+            }
+
+            .btn--equal {
+                background-color: $color-theme-3-key-cyan;
+                box-shadow: 0 4px 0 $color-theme-3-key-cyan-soft;
+
+                &:hover {
+                    background-color: $color-theme-3-key-cyan-soft;
+                }
+            }
+        }
+    }
+}

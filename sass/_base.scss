@@ -1,0 +1,66 @@
+// ##### Backgrounds
+$color-theme-1-bg-main: hsl(222, 26%, 31%); //main background
+$color-theme-1-bg-keypad:hsl(223, 31%, 20%); //toggle background, keypad background
+$color-theme-1-bg-output: hsl(224, 36%, 15%); // output screen background
+// ###### Keys
+$color-theme-1-key : hsl(30, 25%, 89%); // key background
+$color-theme-1-key-shadow: hsl(28, 16%, 65%); //key shadow background
+$color-theme-1-key-blue-dark: hsl(225, 21%, 49%); //'DEL', 'RESET' key background
+$color-theme-1-key-blue-dark-shadow: hsl(224, 28%, 35%); //'DEL', 'RESET' key shadow background
+$color-theme-1-key-orange : hsl(6, 63%, 50%); //'=' key  background
+$color-theme-1-key-orange-shadow: hsl(6, 70%, 34%); //'=' key shadow background
+// ###### Text
+$color-theme-1-text-blue-dark: hsl(221, 14%, 31%);
+$color-theme-1-text: hsl(0, 0, 100%); // 'DEL', 'RESET' key text color
+
+// THEME-2
+// ##### Backgrounds
+$color-theme-2-bg-main: hsl(0, 0%, 90%); //main background
+$color-theme-2-bg-keypad:hsl(0, 5%, 81%); //toggle background, keypad background
+$color-theme-2-bg-output: hsl(0, 0%, 93%); // output screen background
+// ###### Keys
+$color-theme-2-key: hsl(45, 7%, 89%); // key background
+$color-theme-2-key-shadow: hsl(35, 11%, 61%); //key shadow background
+$color-theme-2-key-cyan: hsl(185, 42%, 37%); //'DEL', 'RESET' key background
+$color-theme-2-key-cyan-dark: hsl(185, 58%, 25%); //'DEL', 'RESET' key shadow background
+$color-theme-2-key-orange : hsl(25, 98%, 40%); //'=' key  background
+$color-theme-2-key-orange-dark: hsl(25, 99%, 27%); //'=' key shadow background
+// ###### Text
+$color-theme-2-text-gray-yellow: hsl(60, 10%, 19%);
+$color-theme-2-text: hsl(0, 0, 100%); // 'DEL', 'RESET' key text color
+
+// THEME-3
+// ##### Backgrounds
+$color-theme-3-bg-main: hsl(268, 75%, 9%); //main background
+$color-theme-3-bg-keypad:hsl(268, 71%, 12%); //toggle background, keypad background
+$color-theme-3-bg-output: hsl(0, 0%, 93%); // output screen background
+// ###### Keys
+$color-theme-3-key: hsl(268, 47%, 21%); // key background
+$color-theme-3-key-shadow: hsl(290, 70%, 36%); //key shadow background
+$color-theme-3-key-violet-dark: hsl(281, 89%, 26%); //'DEL', 'RESET' key background
+$color-theme-3-key-vivid-magenta: hsl(285, 91%, 52%); //'DEL', 'RESET' key shadow background
+$color-theme-3-key-cyan: hsl(176, 100%, 44%); //'=' key  background
+$color-theme-3-key-cyan-soft: hsl(177, 92%, 70%); //'=' key shadow background
+// ###### Text
+$color-theme-3-text-yellow-light: hsl(52, 100%, 62%);
+$color-theme-3-text-blue-dark: hsl(198, 20%, 13%);
+$color-theme-3-text: hsl(0, 0, 100%); // 'DEL', 'RESET' key text color
+
+$size-device-mobile: 375px;
+$size-device-laptop: 1440px;
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+    font-size: 62.5%;
+    font-weight: 700;
+    font-size: 1.4rem;
+    min-height: 100vh;
+}

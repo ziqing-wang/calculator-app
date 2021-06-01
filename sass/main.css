@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Spartan", sans-serif;
+  font-size: 62.5%;
+  font-weight: 700;
+  font-size: 1.4rem;
+  min-height: 100vh;
+}
+
+.calculator {
+  max-width: 28rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.calculator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-weight: 400;
+}
+.calculator-header .app-name {
+  font-weight: 600;
+}
+.calculator-header .theme {
+  display: flex;
+  align-items: inherit;
+}
+.calculator-header .theme-name {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+.calculator-header .theme .toggle {
+  display: grid;
+  grid-template-columns: repeat(3, 1.6rem);
+}
+.calculator-header .theme .toggle__span {
+  font-size: 0.75rem;
+  text-align: center;
+}
+.calculator-header .theme .toggle .calculator__div--toggle {
+  width: 4.8rem;
+  height: 1.6rem;
+  border-radius: 1.6rem;
+  position: relative;
+}
+.calculator-header .theme .toggle .calculator__div--toggle .slide__btn {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  top: 50%;
+  left: 0.25rem;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+}
+.calculator-output {
+  min-height: 6.25rem;
+  text-align: right;
+  padding: 1rem;
+  margin: 1.25rem 0;
+  border-radius: 6px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.calculator-output .prev-operand {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.75;
+}
+.calculator-output .curr-operand {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+.calculator-grid {
+  display: grid;
+  border-radius: 6px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: inherit;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: repeat(5, 3rem);
+  padding: 1.5rem;
+  grid-gap: 1.5rem;
+}
+.calculator-grid .btn {
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 6px;
+  border: none;
+  color: white;
+}
+.calculator-grid .btn:hover {
+  background-color: #b4a597;
+}
+.calculator-grid .btn--number,
+.calculator-grid .btn--operation {
+  background-color: #eae3dc;
+  box-shadow: 0 4px 0 #b4a597;
+  color: #444b5a;
+}
+.calculator-grid .btn--delete,
+.calculator-grid .btn--reset {
+  font-size: 1rem;
+  background-color: #637097;
+  box-shadow: 0 4px 0 #404e72;
+}
+.calculator-grid .btn--delete:hover,
+.calculator-grid .btn--reset:hover {
+  background-color: #404e72;
+}
+.calculator-grid .btn--equal {
+  background-color: #d03f2f;
+  box-shadow: 0 4px 0 #93261a;
+}
+.calculator-grid .btn--equal:hover {
+  background-color: #93261a;
+}
+.calculator-grid .btn--reset,
+.calculator-grid .btn--equal {
+  grid-column: span 2;
+}
+
+@media (max-width: 50rem) {
+  .calculator {
+    padding: 1rem;
+  }
+  .calculator-grid {
+    grid-template-columns: repeat(4, 4rem);
+    grid-template-rows: repeat(5, 2.5rem);
+    grid-gap: 1rem;
+  }
+}
+.theme--1 {
+  background-color: #3a4764;
+  color: white;
+}
+.theme--1 .calculator__div--toggle {
+  background-color: #232c43;
+}
+.theme--1 .calculator__div--toggle .slide__btn {
+  background-color: #d03f2f;
+}
+.theme--1 .calculator-output {
+  background-color: #182034;
+}
+.theme--1 .calculator-grid {
+  background-color: #232c43;
+}
+.theme--1 .calculator-grid .btn {
+  color: white;
+}
+.theme--1 .calculator-grid .btn:hover {
+  background-color: #b4a597;
+}
+.theme--1 .calculator-grid .btn--number,
+.theme--1 .calculator-grid .btn--operation {
+  background-color: #eae3dc;
+  box-shadow: 0 4px 0 #b4a597;
+  color: #444b5a;
+}
+.theme--1 .calculator-grid .btn--delete,
+.theme--1 .calculator-grid .btn--reset {
+  background-color: #637097;
+  box-shadow: 0 4px 0 #404e72;
+}
+.theme--1 .calculator-grid .btn--delete:hover,
+.theme--1 .calculator-grid .btn--reset:hover {
+  background-color: #404e72;
+}
+.theme--1 .calculator-grid .btn--equal {
+  background-color: #d03f2f;
+  box-shadow: 0 4px 0 #93261a;
+}
+.theme--1 .calculator-grid .btn--equal:hover {
+  background-color: #93261a;
+}
+
+.theme--2 {
+  background-color: #e6e6e6;
+  color: #35352c;
+}
+.theme--2 .calculator__div--toggle {
+  background-color: #d1cccc;
+}
+.theme--2 .calculator__div--toggle .slide__btn {
+  background-color: #ca5502;
+}
+.theme--2 .calculator-output {
+  background-color: #ededed;
+}
+.theme--2 .calculator-grid {
+  background-color: #d1cccc;
+}
+.theme--2 .calculator-grid .btn {
+  color: white;
+}
+.theme--2 .calculator-grid .btn:hover {
+  background-color: #a69d91;
+}
+.theme--2 .calculator-grid .btn--number,
+.theme--2 .calculator-grid .btn--operation {
+  background-color: #e5e4e1;
+  box-shadow: 0 4px 0 #a69d91;
+  color: #35352c;
+}
+.theme--2 .calculator-grid .btn--delete,
+.theme--2 .calculator-grid .btn--reset {
+  background-color: #377f86;
+  box-shadow: 0 4px 0 #1b5f65;
+}
+.theme--2 .calculator-grid .btn--delete:hover,
+.theme--2 .calculator-grid .btn--reset:hover {
+  background-color: #1b5f65;
+}
+.theme--2 .calculator-grid .btn--equal {
+  background-color: #ca5502;
+  box-shadow: 0 4px 0 #893901;
+}
+.theme--2 .calculator-grid .btn--equal:hover {
+  background-color: #893901;
+}
+
+.theme--3 {
+  background-color: #160628;
+  color: #ffe53d;
+}
+.theme--3 .calculator__div--toggle {
+  background-color: #1d0934;
+}
+.theme--3 .calculator__div--toggle .slide__btn {
+  background-color: #00e0d1;
+}
+.theme--3 .calculator-output {
+  background-color: #1d0934;
+}
+.theme--3 .calculator-grid {
+  background-color: #1d0934;
+}
+.theme--3 .calculator-grid .btn {
+  color: #ffe53d;
+}
+.theme--3 .calculator-grid .btn:hover {
+  background-color: #871c9c;
+}
+.theme--3 .calculator-grid .btn--number,
+.theme--3 .calculator-grid .btn--operation {
+  background-color: #341c4f;
+  box-shadow: 0 4px 0 #871c9c;
+}
+.theme--3 .calculator-grid .btn--delete,
+.theme--3 .calculator-grid .btn--reset {
+  background-color: #58077d;
+  box-shadow: 0 4px 0 #bc15f4;
+}
+.theme--3 .calculator-grid .btn--delete:hover,
+.theme--3 .calculator-grid .btn--reset:hover {
+  background-color: #bc15f4;
+}
+.theme--3 .calculator-grid .btn--equal {
+  background-color: #00e0d1;
+  box-shadow: 0 4px 0 #6cf9f2;
+}
+.theme--3 .calculator-grid .btn--equal:hover {
+  background-color: #6cf9f2;
+}/*# sourceMappingURL=main.css.map */
